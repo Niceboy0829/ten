@@ -139,10 +139,10 @@ video {
 #video:after {
   content: '';
   opacity: 0.75;
-  background: #4096ee; /* Old browsers */
-  background: -moz-linear-gradient(top, #4096ee 0%, #39ced6 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #4096ee 0%,#39ced6 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #4096ee 0%,#39ced6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: #0d0820; /* Old browsers */
+  background: -moz-linear-gradient(top, #3d5bbe 0%, #00ee6b 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #0a22f8 0%,#27326d 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #1111fd 0%,#20346b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4096ee', endColorstr='#39ced6',GradientType=0 ); /* IE6-9 */
   position:fixed;
   left:0;
@@ -838,10 +838,35 @@ textarea.form-control {
   background-color: rgba(250,250,250,0.25);
   position: relative;
 }
-.filled-bar-70 {
+
+.filled-bar-100 {
   position: absolute;
   z-index: 99;
-  width: 64%;
+  width: 100%;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+.filled-bar-98 {
+  position: absolute;
+  z-index: 99;
+  width: 98%;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+.filled-bar-95 {
+  position: absolute;
+  z-index: 99;
+  width: 95%;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+.filled-bar-93 {
+  position: absolute;
+  z-index: 99;
+  width: 93%;
   height: 6px;
   background-color: #fff;
   border-radius: 3px;
@@ -849,24 +874,25 @@ textarea.form-control {
 .filled-bar-90 {
   position: absolute;
   z-index: 99;
-  width: 82%;
+  width: 90%;
   height: 6px;
   background-color: #fff;
   border-radius: 3px;
 }
-.filled-bar-80 {
-  position: absolute;
-  z-index: 99;
-  width: 70%;
-  height: 6px;
-  background-color: #fff;
-  border-radius: 3px;
+.rounded-img {
+  border-radius: 50%;
+  height:100px;
+  width:100px;
+  opacity: 50%;
 }
-.filled-bar-85 {
-  position: absolute;
-  z-index: 99;
-  width: 75%;
-  height: 6px;
-  background-color: #fff;
-  border-radius: 3px;
+
+.rounded-img:hover{
+  opacity:100%;
+  transform: scale(1.1);
+  transition: 1.5s;
+}
+
+.flex-row{
+  display:flex;
+  flex-direction: row;
 }
